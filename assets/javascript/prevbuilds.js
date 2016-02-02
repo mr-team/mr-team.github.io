@@ -4,6 +4,7 @@ $.ajax({
     dataType: "json",
     success: function (result) {
         $("#previousBuilds").html("");
+        $("#previousBuilds").append("<option value=\"/\">Current Build</option>");
         for (var i in result) {
             if (result[i].name == "index.html" || result[i].name == "notcontra.unity3d")
                 continue;
