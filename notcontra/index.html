@@ -76,7 +76,6 @@
 			});
 		-->
 	</script>
-    
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -85,49 +84,47 @@
     </head>
     <body>
     <div class="site-wrapper">
-
       <div class="site-wrapper-inner">
-
         <div class="cover-container">
-
           <div class="masthead clearfix">
             <div class="inner">
               <h3 class="masthead-brand">Mr. Team</h3>
               <nav>
                 <ul class="nav masthead-nav">
-                  <li><a href="http://denbestelag.com/"><img src="../assets/images/house-small.png" alt="Mr. Team" /> Home</a></li>
-                  <li class="active"><a href="http://denbestelag.com/games.html"><img src="../assets/images/controller-white-small.png" alt="Our Games" /> Games</a></li>
-                  <li><a href="https://github.com/mr-team"><img src="../assets/images/github-white-small.png" alt="Github" /> Github</a></li>
-                  <li><a href="https://www.nord.no/en/"><img src="../assets/images/nordlogono-small.png" alt="Nord University" /> Nord University</a></li>
+                  <li><a href="http://denbestelag.com/"><img src="http://denbestelag.com/assets/images/house-small.png" alt="Mr. Team" /> Home</a></li>
+                  <li class="active"><a href="http://denbestelag.com/games.html"><img src="http://denbestelag.com/assets/images/controller-white-small.png" alt="Our Games" /> Games</a></li>
+                  <li><a href="https://github.com/mr-team"><img src="http://denbestelag.com/assets/images/github-white-small.png" alt="Github" /> Github</a></li>
+                  <li><a href="https://www.nord.no/en/"><img src="http://denbestelag.com/assets/images/nordlogono-small.png" alt="Nord University" /> Nord University</a></li>
                 </ul>
               </nav>
             </div>
           </div>
-
           <div class="inner cover">
             <h1 class="cover-heading">Not Contra</h1>
+            <p>
+                <select id="previousBuilds" style="color: #000; width: 100px;">
+                    <option selected>Loading previous versions</option>
+                </select>
+                <input type="button" id="selectBuild" value="Change build" style="color: #000;" />
+            </p>
             <div id="unityPlayer">
-  		<div class="missing">
-  			<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
-  				<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
-  			</a>
-  		</div>
-  	    </div>
+  		        <div class="missing">
+  			        <a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+  				        <img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+  			        </a>
+  		        </div>
+  	        </div>
           </div>
-
           <div class="mastfoot">
             <div class="inner">
               <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
             </div>
           </div>
-
         </div>
-
       </div>
-
     </div>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../assets/javascript/prevbuilds.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     </body>
