@@ -30,8 +30,8 @@ Module.expectedDataFileDownloads++;
                               Module['locateFile'](REMOTE_PACKAGE_BASE) :
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
   
-      var REMOTE_PACKAGE_SIZE = 22289740;
-      var PACKAGE_UUID = '689cd8c2-a18d-4453-98ef-8fbfddb23f4d';
+      var REMOTE_PACKAGE_SIZE = 27105970;
+      var PACKAGE_UUID = '0b975511-7647-4739-a1cd-7ed05ea3c54d';
     
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -132,15 +132,15 @@ Module['FS_createPath']('/', 'Resources', true, true);
       },
     };
 
-      new DataRequest(0, 217944, 0, 0).open('GET', '/mainData');
-    new DataRequest(217944, 218393, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
-    new DataRequest(218393, 4743029, 0, 0).open('GET', '/resources.assets');
-    new DataRequest(4743029, 5352627, 0, 0).open('GET', '/resources.resource');
-    new DataRequest(5352627, 18293243, 0, 0).open('GET', '/sharedassets0.assets');
-    new DataRequest(18293243, 18415468, 0, 0).open('GET', '/sharedassets0.resource');
-    new DataRequest(18415468, 19898584, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
-    new DataRequest(19898584, 21786008, 0, 0).open('GET', '/Resources/unity_default_resources');
-    new DataRequest(21786008, 22289740, 0, 0).open('GET', '/Resources/unity_builtin_extra');
+      new DataRequest(0, 85864, 0, 0).open('GET', '/mainData');
+    new DataRequest(85864, 86313, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
+    new DataRequest(86313, 4634549, 0, 0).open('GET', '/resources.assets');
+    new DataRequest(4634549, 4639523, 0, 0).open('GET', '/resources.resource');
+    new DataRequest(4639523, 17572515, 0, 0).open('GET', '/sharedassets0.assets');
+    new DataRequest(17572515, 23230046, 0, 0).open('GET', '/sharedassets0.resource');
+    new DataRequest(23230046, 24714814, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
+    new DataRequest(24714814, 26602238, 0, 0).open('GET', '/Resources/unity_default_resources');
+    new DataRequest(26602238, 27105970, 0, 0).open('GET', '/Resources/unity_builtin_extra');
 
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
